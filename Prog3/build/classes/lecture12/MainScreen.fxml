@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="700.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecture12.MainScreenController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuItemOpen" mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem fx:id="menuItemClear" mnemonicParsing="false" onAction="#handleClear" text="Clear" />
+                  <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu fx:id="color" mnemonicParsing="false" text="Color">
+            <items>
+              <MenuItem fx:id="menuItemGold" mnemonicParsing="false" onAction="#handleGold" text="Gold" />
+                  <MenuItem fx:id="menuItemGrey" mnemonicParsing="false" onAction="#handleGrey" text="Grey" />
+                  <MenuItem fx:id="menuItemCyan" mnemonicParsing="false" onAction="#handleCyan" text="Cyan" />
+            </items>
+          </Menu>
+          <Menu fx:id="about" mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox fx:id="vb1" alignment="CENTER" prefHeight="375.0" prefWidth="529.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textArea" maxHeight="300.0" maxWidth="500.0" prefHeight="147.0" prefWidth="500.0" text="Playing with JavaFX Advanced Controls" wrapText="true" />
+            <Slider fx:id="fontSizeSlider" majorTickUnit="5.0" max="35.0" min="5.0" minorTickCount="4" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="12.0" />
+            <HBox fx:id="hb1" alignment="CENTER" prefHeight="393.0" prefWidth="588.0" spacing="15.0">
+               <children>
+                  <ComboBox fx:id="combo" onAction="#handleCombo" prefWidth="150.0" />
+                  <WebView fx:id="webView" prefHeight="289.0" prefWidth="437.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

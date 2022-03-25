@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="100.0" prefHeight="400.0" prefWidth="600.0" style="-fx-font-size: 14; -fx-background-color: aquamarine;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecture12.LoginScreenController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="302.0" prefWidth="381.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="253.0" prefWidth="381.0" spacing="20.0">
+               <children>
+                  <Label style="-fx-font-family: cursive; -fx-font-style: italic; -fx-font-size: 18;" text="Login Screen">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" prefWidth="200.0" promptText="Username" style="-fx-font-style: italic;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" promptText="Password" style="-fx-font-style: italic;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="labelError" prefHeight="30.0" prefWidth="85.0" style="-fx-font-style: italic; -fx-font-size: 16;" text="Initial State" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="381.0" spacing="20.0">
+               <children>
+                  <Button fx:id="buttonSubmit" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonSubmit" style="-fx-font-weight: bold; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #0e2110; -fx-text-fill: white;" text="Submit">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonClear" mnemonicParsing="false" onAction="#handleButtonClear" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-font-weight: bold; -fx-background-color: #0e2110; -fx-text-fill: white;" text="Clear" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

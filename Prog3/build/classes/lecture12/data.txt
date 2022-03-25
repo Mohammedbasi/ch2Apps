@@ -1,0 +1,4 @@
+Playing with JavaFX Advanced ControlsIt is easy to make things hard, but it is hard to make things easy.
+Do not give up, try, try, try until success.
+Java programming 3 is very funny.
+java
